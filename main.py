@@ -15,6 +15,16 @@ for el in arr:
 print("Уникальные комбинации:")
 print(arr_2)
 
+count = 0
 
+x = int(input("Введите число: "))
 
+for tuple in arr_2:
+    sum=0
+    for el in tuple:
+        sum+=el
+    if sum < x:
+        count+=1
+
+print("Кол-во пар, чья сумма меньше:",count)
 
